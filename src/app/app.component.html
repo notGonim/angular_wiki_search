@@ -1,1 +1,6 @@
-<app-page-list></app-page-list> <app-search-bar></app-search-bar>
+<div class="container m-3">
+  <h2 class="display-2 text-center mb-3">Welcome to Wiki</h2>
+  <app-search-bar (submitted)="onTerm($event)"></app-search-bar>
+  <hr />
+  <app-page-list></app-page-list>
+</div>
